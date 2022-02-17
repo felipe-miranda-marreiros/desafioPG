@@ -1,11 +1,3 @@
-//Essa parte do código é necessária para utilizar o input do usuário.
-//"desafio_1_input" é o espaço reservado para entrada de valores.
-const input = require("fs").readFileSync(
-  "01 - Desafio/desafio_1_input",
-  "utf-8"
-);
-///////////////////////////////////////////////////////////////////////////////////////////
-
 /**
  * A função "fazerEscada" recebe como argumento um valor de tamanho N e constroi uma escada.
  *
@@ -37,7 +29,17 @@ function fazerEscada(n) {
 
   /*Retornamos o resultado sem a criação de uma nova linha com ajuda
   de uma expressão regular e o método replace()*/
-  return console.log(resultado.replace(/\n*$/, ""));
+  return resultado.replace(/\n*$/, "");
 }
 
-fazerEscada(input);
+//Input que faz parte do Node. É necessário ter Node instalado.
+//A função abaixo tem como objetivo obter a Entrada(valor) e mostrar Saída(resultado).
+const readline = require("readline").createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+readline.question("Entrada: ", (n) => {
+  console.log(`Saída:\n${fazerEscada(n)}`);
+  readline.close();
+});

@@ -1,11 +1,3 @@
-//Essa parte do código é necessária para utilizar o input do usuário.
-//"desafio_2_input" é o espaço reservado para entrada de valores.
-const input = require("fs").readFileSync(
-  "02 - Desafio/desafio_2_input",
-  "utf-8"
-);
-////////////////////////////////////////////////////
-
 /**
  *
  * @param {*} string recebe uma string como parâmetro.
@@ -66,4 +58,12 @@ const validarSenha = (string) => {
   return validacao;
 };
 
-validarSenha(input);
+const readline = require("readline").createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+readline.question("Entrada: ", (n) => {
+  `Saída:\n${validarSenha(n)}`;
+  readline.close();
+});

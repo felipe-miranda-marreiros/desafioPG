@@ -1,11 +1,3 @@
-//Essa parte do código é necessária para utilizar o input do usuário.
-//"desafio_3_input" é o espaço reservado para entrada de valores.
-const input = require("fs").readFileSync(
-  "03 - Desafio/desafio_3_input",
-  "utf-8"
-);
-///////////////////////////////////////////////////////////////////
-
 /**
  *
  * @param {*} string a função recebe como argumento uma string.
@@ -23,9 +15,9 @@ function verificarAnagramas(string) {
   Excluímos os elementos repetidos (2 e 1) e sobrará 3, então três anagramas pares.
   */
   if (string === "" || string === 0) {
-    return console.log("Valor não encontrado");
+    return "Valor não encontrado";
   } else if (string.length < 4) {
-    return console.log(3);
+    return 3;
   } else {
     //Em JavaScript é possível criar uma hashmap com New Operator e Map(). Sua estrutura funcionará com keys e values normalmente.
     const map = new Map();
@@ -56,8 +48,16 @@ function verificarAnagramas(string) {
     //Aqueles com frequência maior que 1 serão armazenados na array "pares".
     novaArr.forEach((el) => (el > 1 ? pares.push(el) : "zero"));
 
-    return console.log(pares.length);
+    return pares.length;
   }
 }
 
-verificarAnagramas(input);
+const readline = require("readline").createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+readline.question("Entrada: ", (n) => {
+  console.log(`Saída:\n${verificarAnagramas(n)}`);
+  readline.close();
+});

@@ -7,6 +7,7 @@
 function verificarAnagramas(string) {
   //Palavras como ovo que possuem length de 3, podem ser analisadas com o seguinte cálculo:
   /*
+  Formula da permutação:
   3! / 2!.
 
   O resultado será 3 * 2 * 1
@@ -52,6 +53,8 @@ function verificarAnagramas(string) {
   }
 }
 
+//Input que faz parte do Node. É necessário ter Node instalado.
+//A função abaixo tem como objetivo obter a Entrada(valor) e mostrar Saída(resultado).
 const readline = require("readline").createInterface({
   input: process.stdin,
   output: process.stdout,

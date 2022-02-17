@@ -3,10 +3,11 @@
  * @param {*} string recebe uma string como parâmetro.
  * @returns retorna se a senha é válida ou precisa de caracteres
  * necessários para ser considerada segura.
+ * O método match() testa uma condição e retorna um valor booleano.
 //
 
-/*função responsável por verificar o tamanho e retornar quantas caracteres
-são necessários*/
+/*função responsável por verificar o tamanho da senha e retornar quantas caracteres
+são necessários para ela completar o minímo de caractereses exigidos*/
 const validarTamanho = (string) => {
   if (string === "" || string.length < 6) {
     return `A senha precisa ter no mínimo 6 caracteres. Sua senha tem ${
@@ -44,7 +45,7 @@ const validarCaractere = (string) => {
 };
 //função que reuni todos os métodos para serem testadas
 const validarSenha = (string) => {
-  //Array com todas as funções sendo testas
+  //Array com todas as funções sendo testadas
   const teste = [
     validarTamanho(string),
     validarDigito(string),
@@ -58,6 +59,8 @@ const validarSenha = (string) => {
   return validacao;
 };
 
+//Input que faz parte do Node. É necessário ter Node instalado.
+//A função abaixo tem como objetivo obter a Entrada(valor) e mostrar Saída(resultado).
 const readline = require("readline").createInterface({
   input: process.stdin,
   output: process.stdout,

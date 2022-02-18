@@ -5,20 +5,8 @@
  */
 
 function verificarAnagramas(string) {
-  //Palavras como ovo que possuem length de 3, podem ser analisadas com o seguinte cálculo:
-  /*
-  Formula da permutação:
-  3! / 2!.
-
-  O resultado será 3 * 2 * 1
-                      2 * 1
-
-  Excluímos os elementos repetidos (2 e 1) e sobrará 3, então três anagramas pares.
-  */
   if (string === "" || string === 0) {
     return "Valor não encontrado";
-  } else if (string.length < 4) {
-    return 3;
   } else {
     //Em JavaScript é possível criar uma hashmap com New Operator e Map(). Sua estrutura funcionará com keys e values normalmente.
     const map = new Map();

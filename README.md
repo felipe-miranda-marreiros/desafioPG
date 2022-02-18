@@ -6,11 +6,11 @@ Linguagem utilizada: <span style="color:#E3710C;"><strong>JavaScript</strong></s
 
 ```
 📦 01 - Desafio
-├─ desafio_1.js
+├─ desafio_1.js - Questão 01 - Escada
 📦 02 - Desafio
-├─ desafio_2.js
-📦 03 - Desafio
-├─ desafio_3.js
+├─ desafio_2.js - Questão 02 - Senha
+📦 03 - Desafio 
+├─ desafio_3.js - Questão 03 - Anagramas Pares
 ```
 
 ## Guia de Expressões Regulares

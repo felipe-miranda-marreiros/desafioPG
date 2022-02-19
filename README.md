@@ -6,11 +6,11 @@ Linguagem utilizada: <span style="color:#E3710C;"><strong>JavaScript</strong></s
 
 ```
 📦 01 - Desafio
-├─ desafio_1.js
+├─ desafio_1.js - Questão 01 - Escada
 📦 02 - Desafio
-├─ desafio_2.js
+├─ desafio_2.js - Questão 02 - Senha
 📦 03 - Desafio
-├─ desafio_3.js
+├─ desafio_3.js - Questão 03 - Anagramas Pares
 ```
 
 ## Guia de Expressões Regulares
@@ -89,6 +89,20 @@ Substitua x pela número da pasta e no final teremos:
 
 Faça o mesmo processo para cada pasta.
 
+## Testes Unitários
+
+Utilizei Jester para cada desafio. Para ter acesso, é preciso ter Jester instalado com o código:
+
+```
+npm install --save-dev jest
+```
+
+Logo em seguida, você poderá verificar, para qualquer um dos desafios, o seguinte código:
+
+```
+npm test
+```
+
 ## Referências
 
 #### Creating your own Custom Regular Expression
@@ -102,3 +116,7 @@ Faça o mesmo processo para cada pasta.
 #### JSDoc
 
 - https://jsdoc.app/index.html
+
+  #### Jester
+
+- https://jestjs.io/docs/getting-started

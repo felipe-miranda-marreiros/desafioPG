@@ -9,7 +9,7 @@ function fazerEscada(n) {
   let resultado = "";
 
   if (n <= 0 || n === "") {
-    return console.log("Nenhum valor encontrado.");
+    return "Nenhum valor encontrado.";
   } else {
     /*Este loop (i) tem como propósito criar uma nova linha(\n) a cada
     iteração de j e k*/
@@ -43,3 +43,5 @@ readline.question("Entrada: ", (n) => {
   console.log(`Saída:\n${fazerEscada(n)}`);
   readline.close();
 });
+
+module.exports = fazerEscada;

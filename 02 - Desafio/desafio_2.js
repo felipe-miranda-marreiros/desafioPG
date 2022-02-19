@@ -70,3 +70,5 @@ readline.question("Entrada: ", (n) => {
   `Saída:\n${validarSenha(n)}`;
   readline.close();
 });
+
+module.exports = validarTamanho;

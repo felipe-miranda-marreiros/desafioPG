@@ -1,0 +1,23 @@
+{
+  "name": "desafiopg",
+  "version": "1.0.0",
+  "description": "Repositório faz parte da terceira etapa do Desafio de Programação da Academia Capgemini 2022.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipe-miranda-marreiros/desafioPG.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipe-miranda-marreiros/desafioPG/issues"
+  },
+  "homepage": "https://github.com/felipe-miranda-marreiros/desafioPG#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}

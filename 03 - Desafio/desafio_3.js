@@ -52,3 +52,5 @@ readline.question("Entrada: ", (n) => {
   console.log(`Saída:\n${verificarAnagramas(n)}`);
   readline.close();
 });
+
+module.exports = verificarAnagramas;

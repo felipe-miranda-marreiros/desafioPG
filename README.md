@@ -9,7 +9,11 @@ Linguagem utilizada: <span style="color:#E3710C;"><strong>JavaScript</strong></s
 ├─ desafio_1.js - Questão 01 - Escada
 📦 02 - Desafio
 ├─ desafio_2.js - Questão 02 - Senha
+<<<<<<< HEAD
 📦 03 - Desafio
+=======
+📦 03 - Desafio 
+>>>>>>> 47136f95750fa7ff4661a87da75bbcdeb07d28d1
 ├─ desafio_3.js - Questão 03 - Anagramas Pares
 ```
 
